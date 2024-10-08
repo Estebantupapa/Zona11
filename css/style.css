@@ -23,7 +23,8 @@ header{
 }
 
 .logo a img{
-     height: 90px; /* O ajusta a tu preferencia */
+     
+    height: 90px; /* O ajusta a tu preferencia */
     width: auto;
     margin-left: 250%;
 }
@@ -93,8 +94,8 @@ header{
 }
 
 .promo-container img {
-    width: 500px;
-    height: 90%; /* Mantiene las proporciones de la imagen */
+    width: 400px;
+    height: 80%; /* Mantiene las proporciones de la imagen */
     border-radius: 10px; /* Borde redondeado opcional */
 }
 
@@ -264,3 +265,98 @@ product-section {
     transition: background-color 0.3s ease;
     margin-top: 20px;
 }
+
+/* Estilo generador de confianza */
+
+.container__trust{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card__primary{
+    width: 100%;
+    padding-right: 150px;
+    color: rgb(255, 255, 255);
+}
+
+.text__trust h1{
+    font-size: 50px;
+    text-align: center;
+}
+
+.container__box-cardPrimary{
+    display: flex;               /* Para alinear los elementos horizontalmente */
+    justify-content: space-between; /* Espacio entre tarjetas */
+    flex-wrap: wrap;           /* Permite que las tarjetas se ajusten si no hay suficiente espacio */
+}
+
+.box__card-primary{
+    margin: 20px;              /* Espacio entre las tarjetas */
+    text-align: center;        /* Centra el texto en cada tarjeta */
+    flex: 1;                   /* Permite que las tarjetas ocupen espacio flexible */
+    max-width: 300px;         /* Ancho máximo de cada tarjeta */
+}
+
+.card__trust img{
+    max-width: 100%;           /* Asegura que la imagen se ajuste al tamaño de la tarjeta */
+    height: auto;              /* Mantiene la proporción de la imagen */
+    border-radius: 10px;
+}
+
+
+
+
+/* contenedor formulario */
+
+.container__form {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: #EDEDED;
+}
+
+.cover {
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.text__cover {
+    width: 60%;
+    padding-right: 50px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin-top: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.contact-form button {
+    margin-top: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
