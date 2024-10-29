@@ -9,17 +9,18 @@
 body{
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #2C1A1A; /* Color de fondo oscuro similar al logo */
+    background-color: #FAF8F5; /* Fondo blanco suave */
+    color: #2C2C2C; /* Texto negro */
 }
 
 header{
-    background-color: #332121;/* Color marrón oscuro */
-    color: #EDEDED;/* Color blanco suave para el texto */
+    background-color: #4E3629; /* Marrón oscuro */
+    color: #FFFFFF; /* Blanco */
     padding: 20px 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 2px solid #AB4444;  /* Línea inferior en tono rojizo */
+    border-bottom: 2px solid #8B4513; /* Línea inferior marrón claro */
 }
 
 .logo a img{
@@ -47,20 +48,20 @@ header{
 }
 
 .menu nav ul li a{
-    color: #EDEDED; /* Color blanco suave */
+    color: #FFFFFF; /* Blanco */
     text-decoration: none;
     font-size: 18px;
 }
 
 .menu nav ul li a:hover{
-    color: #AB4444; /* Efecto hover en tono rojizo */
+    color: #8B4513; /* Marrón claro */
     text-decoration: none;
 }
 
 /* Botón de cotización */
 .btn-quote {
-    background-color: rgb(231, 14, 14);
-    color: black;
+    background-color: #8B4513; /* Marrón claro */
+    color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -70,6 +71,11 @@ header{
     transition: background-color 0.3s ease;
     
 }
+
+.btn-quote:hover {
+    background-color: #4E3629; /* Marrón oscuro */
+}
+
 /* Estilos para las redes sociales */
 .social-media {
     display: flex;
@@ -85,7 +91,7 @@ header{
 }
 
 .social-media a:hover {
-    color: #AB4444; /* Cambia el color del bar al pasar el cursor */
+    color: #8B4513; /* Marrón claro */
 }
 
 /* Estilos del contenedor de la imagen publicitaria */
@@ -94,35 +100,33 @@ header{
 }
 
 .promo-container img {
-    width: 400px;
-    height: 80%; /* Mantiene las proporciones de la imagen */
+    max-width: 80%; /* Ajusta para que la imagen no exceda el contenedor */
+    height: auto;    /* Mantiene las proporciones de la imagen */
     border-radius: 10px; /* Borde redondeado opcional */
 }
 
-.cover{
-
-    max-width: 1200px; /* limita el ancho maximo del contenedor a 1200px */
-    margin: auto; /* centra horizontalmente */
-    margin-top: 100px; /*  */
-    display: flex; /* usa flexbox para alinear los elementos hijos*/
-    align-items: center; /* alinea verticalmente los elementos hijos*/
-    padding: 0px 20px; /* añade un relleno a la derecha */
+.cover {
+    max-width: 1200px; /* Limita el ancho máximo del contenedor a 1200px */
+    margin: auto; /* Centra horizontalmente */
+    margin-top: 100px; /* Espaciado superior */
+    display: flex; /* Usa flexbox para alinear los elementos hijos */
+    align-items: center; /* Alinea verticalmente los elementos hijos */
+    padding: 0 20px; /* Añade un relleno a los lados */
 }
 
-.text__cover{
+.text__cover {
     width: 100%; 
-    padding-right: 150px;
-    color: white;
+    padding-right: 20px; /* Ajustar para más equilibrio con la imagen */
+    color: #2C2C2C;
 }
 
-.text__cover h1{
-
+.text__cover h1 {
     font-size: 50px;
 }
 
-.btn__text-cover__btn__text{
-    background-color: rgb(228, 20, 20);
-    color: black;
+.btn__text-cover__btn__text {
+    background-color: #8B4513; /* Marrón claro */
+    color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -132,13 +136,14 @@ header{
     transition: background-color 0.3s ease;
 }
 
-.btn__text-cover__btn__text:hover{
-    background-color: transparent;
+.btn__text-cover__btn__text:hover {
+    background-color: #4E3629; /* Marrón oscuro */
     color: white;
 }
 
+
 /* Estilos del contenedor de productos */
-product-section {
+.product-section {
     padding-top: 100px;
     text-align: center;   
 }
@@ -146,25 +151,28 @@ product-section {
 .product-section h2 {
     margin-bottom: 30px;
     font-size: 24px;
-    color: white;
+    color: #2C2C2C; /* Texto negro */
     font-weight: bold;
     text-align: center;
 }
 
 .product-container {
-   max-width: 1200px;
+    display: flex;               /* Utiliza flexbox para alinear elementos horizontalmente */
+    justify-content: center;     /* Centra las tarjetas en el contenedor */
+    max-width: 1200px;
     margin: auto;
-    text-align: center;
     padding: 0px 20px;
+    flex-wrap: wrap;            /* Permite que las tarjetas se ajusten si no hay suficiente espacio */
 }
 
 .product-card {
-    background-color: white;
+    background-color: #FFFFFF; /* Fondo blanco */
     border-radius: 8px;
     padding: 20px;
-    width: 200px;
+    width: 200px;               /* Ancho de cada tarjeta */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    margin: 10px;              /* Espacio entre las tarjetas */
 }
 
 .product-card img {
@@ -213,9 +221,10 @@ product-section {
     background-color: #e65c00;
 }
 
+
 /* Estilo de sobre nosotros */
 .container__about{
-    background-color: #7b4a42; /* Un color más claro que el que tienes */
+    background-color: #4E3629; /* Marrón oscuro */
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -246,7 +255,7 @@ product-section {
 .text__about{
     width: 100%; 
     padding-right: 150px;
-    color: rgb(255, 255, 255);
+    color: #FFFFFF; /* Blanco */
 }
 
 .text__about h1 {
@@ -254,8 +263,8 @@ product-section {
 }
 
 .btn__text-about{
-    background-color: rgb(228, 20, 20);
-    color: black;
+    background-color: #8B4513; /* Marrón claro */
+    color: white;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -264,6 +273,10 @@ product-section {
     font-weight: bold;
     transition: background-color 0.3s ease;
     margin-top: 20px;
+}
+
+.btn__text-about:hover {
+    background-color: #4E3629; /* Marrón oscuro */
 }
 
 /* Estilo generador de confianza */
@@ -278,7 +291,7 @@ product-section {
 .card__primary{
     width: 100%;
     padding-right: 150px;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 .text__trust h1{
@@ -304,59 +317,267 @@ product-section {
     height: auto;              /* Mantiene la proporción de la imagen */
     border-radius: 10px;
 }
+/*Estilo para los empleados */
+
+/* Contenedor principal */
+.container-employees {
+    padding: 50px 20px;
+    background-color: #f5f5f5; /* Fondo suave */
+    text-align: center;
+}
+
+/* Texto principal */
+.container-text h1 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* Contenedor de empleados */
+.employees-container {
+    display: flex;
+    justify-content: space-around; /* Espaciado entre los elementos */
+    flex-wrap: wrap; /* Para que los elementos se ajusten si no hay espacio */
+    gap: 20px; /* Espacio entre cada tarjeta */
+}
+
+/* Estilo individual de cada empleado */
+.employee {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    overflow: hidden; /* Para que la imagen y el contenido estén contenidos */
+    width: 300px; /* Tamaño fijo de la tarjeta */
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease; /* Animación suave al pasar sobre la tarjeta */
+}
+
+/* Hover para darle una ligera animación a las tarjetas */
+.employee:hover {
+    transform: translateY(-10px);
+}
+
+/* Estilo de las imágenes */
+.employee img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Estilo de los nombres */
+.employee h2 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #007BFF;
+    margin-bottom: 5px;
+}
+
+/* Estilo de los cargos */
+.employee p {
+    font-size: 16px;
+    color: #555;
+}
 
 
 
 
-/* contenedor formulario */
-
+/* Estilos para el contenedor del formulario */
 .container__form {
     padding-top: 100px;
     padding-bottom: 100px;
-    background: #EDEDED;
+    background: #EDEDED; /* Gris suave */
 }
 
+/* Contenedor principal */
 .cover {
     max-width: 1400px;
     margin: auto;
-    display: flex;
-    align-items: center;
+    display: flex; 
+    align-items: flex-start; 
     padding: 0 20px;
 }
 
+/* Estilo de la sección de texto del formulario */
 .text__cover {
     width: 60%;
     padding-right: 50px;
 }
 
+/* Estilo del formulario */
 .contact-form {
-    display: flex;
-    flex-direction: column;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    padding: 30px;
 }
 
+/* Estilo de los grupos de formulario */
+.form-group {
+    margin-bottom: 20px; /* Espacio entre grupos */
+}
+
+/* Estilo de las etiquetas */
 .contact-form label {
-    margin-top: 10px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px; /* Espacio entre etiqueta y campo */
 }
 
+/* Estilo de los campos de entrada */
 .contact-form input,
 .contact-form textarea {
-    margin-top: 5px;
+    width: 100%; /* Ancho completo */
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
+    transition: border-color 0.3s; /* Transición suave para el borde */
 }
 
+/* Estilo de los campos en foco */
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #8B4513; /* Marrón claro */
+    outline: none; /* Elimina el contorno predeterminado */
+}
+
+/* Estilo del botón de envío */
 .contact-form button {
-    margin-top: 20px;
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background-color: #007BFF;
+    background-color: #8B4513; /* Marrón claro */
     color: white;
+    font-size: 16px;
     cursor: pointer;
+    transition: background-color 0.3s; /* Transición suave para el color de fondo */
 }
 
+/* Estilo del botón en hover */
 .contact-form button:hover {
-    background-color: #0056b3;
+    background-color: #4E3629; /* Marrón oscuro */
 }
+
+/* Estilos para el contenedor del mapa */
+.map-container {
+    width: 40%; /* Ancho del mapa */
+    height: 300px; /* Altura del mapa */
+    margin-left: 20px; /* Margen a la izquierda */
+}
+
+/* Estilo del iframe */
+.map-container iframe {
+    width: 100%; 
+    height: 100%;
+    border: 0; /* Sin borde para el iframe */
+}
+
+/* Estilo pie de pagina */
+
+footer {
+    background-color: #FAF8F5; /* Fondo blanco suave */
+    padding: 40px 0;
+    color: #2C2C2C; /* Texto oscuro */
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+  }
+  
+  .footer-logo img {
+    width: 60px;
+    margin-bottom: 15px;
+  }
+  
+  .footer-logo p {
+    max-width: 300px;
+    line-height: 1.6;
+  }
+  
+  .footer-logo input[type="email"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-top: 15px;
+    width: 80%;
+  }
+  
+  .footer-logo button {
+    padding: 10px;
+    background-color: #8B4513; /* Marrón claro */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .footer-logo button:hover {
+    background-color: #4E3629; /* Marrón oscuro */
+  }
+  
+  .footer-links, .footer-services, .footer-contact {
+    width: 25%;
+  }
+  
+  .footer-links h3, .footer-services h3, .footer-contact h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #4E3629; /* Marrón oscuro */
+  }
+  
+  .footer-links ul, .footer-services ul, .footer-contact ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links ul li, .footer-services ul li, .footer-contact ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links ul li a, .footer-services ul li a {
+    text-decoration: none;
+    color: #2C2C2C;
+  }
+  
+  .footer-links ul li a:hover, .footer-services ul li a:hover {
+    color: #8B4513; /* Marrón claro */
+  }
+  
+  .footer-contact ul li i {
+    margin-right: 10px;
+  }
+  
+  .footer-social {
+    margin-top: 15px;
+  }
+  
+  .footer-social a {
+    color: #2C2C2C;
+    font-size: 18px;
+    margin-right: 15px;
+  }
+  
+  .footer-social a:hover {
+    color: #8B4513; /* Marrón claro */
+  }
+  
+  .footer-bottom {
+    background-color: #4E3629; /* Marrón oscuro */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+  }
+  
 
